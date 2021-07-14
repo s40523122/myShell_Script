@@ -1,3 +1,5 @@
+sudo apt upgrade 
+
 # Setup Sources
 sudo apt update 
 sudo apt install -y curl gnupg2 lsb-release
