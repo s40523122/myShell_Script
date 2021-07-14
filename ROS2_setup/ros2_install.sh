@@ -1,4 +1,4 @@
-sudo apt upgrade 
+sudo apt upgrade -y
 
 # Setup Sources
 sudo apt update 
