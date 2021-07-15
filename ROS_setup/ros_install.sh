@@ -2,15 +2,20 @@
 echo " ======================"
 echo " = System requirement ="
 echo " ======================"
-echo -e ' ROS_distro' '\t' ubuntu_release
-echo -e ' kinetic' '\t' 16.04
-echo -e ' melodic' '\t' 18.04
-echo -e ' noetic' '\t' 20.04
-echo ''
+echo -e " ROS_distro" "\t" ubuntu_release
+echo -e " kinetic" "\t" 16.04
+echo -e " melodic" "\t" 18.04
+echo -e " noetic" "\t" 20.04
+echo ""
 
-until [[ $distro =~ ^(kinetic|melodic|noetic)$ ]]; 
+until [[ ${distro} =~ ^(kinetic|melodic|noetic)$ ]]
 do
-   read -p " Please input the ROS distro : " distro; 
+   if [[ -n ${distro} ]]
+   then
+      echo ""
+      echo -e "\e[1;31m Can't find the distro ! \e[0m"
+   fi
+   read -p " Please input the ROS distro : " distro
 done
 
 # Setup sources.list
