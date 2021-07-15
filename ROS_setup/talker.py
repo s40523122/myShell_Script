@@ -21,7 +21,7 @@ if __name__ =='__main__':
         # 發布(內容)
         pub.publish(hello)
         
-        # 顯示於螢幕，等同 print
+        # rospy.loginfo() 將內容顯示於終端機上，類似 print
         rospy.loginfo(hello)
         
         # 休眠一次頻率時間

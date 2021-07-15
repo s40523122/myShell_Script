@@ -1,4 +1,4 @@
-# Read the input name
+# Set the name of the workspace
 echo Hello, please name the workspace first:
 read -p 'Name of the workspace : ' ws_name
 
