@@ -31,6 +31,8 @@ sudo apt install -y ros-${distro}-desktop-full
 
 # Environment setup
 echo "source /opt/ros/${distro}/setup.bash" >> ~/.bashrc
+echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+echo "export ROS_IP=localhost" >> ~/.bashrc
 source ~/.bashrc
 
 # Dependencies for building packages
