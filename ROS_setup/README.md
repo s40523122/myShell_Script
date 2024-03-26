@@ -1,2 +1,11 @@
-# 執行說明
-先給權限 `chmod +x`，之後直接 `sudo ./檔案.sh` 即可自動執行。
+# 安裝 ROS
+1. 取得執行指令集</br>
+  `wget https://raw.githubusercontent.com/s40523122/myShell_Script/main/ROS_setup/ros_install.sh`
+2. 給予執行權限 </br> `chmod +x ros_install.sh`
+3.  輸入指令自動安裝 </br> `./ros_install.sh`
+
+# 建立工作區
+1. 取得執行指令集</br>
+  `wget https://raw.githubusercontent.com/s40523122/myShell_Script/main/ROS_setup/create_ws.sh`
+2. 給予執行權限 </br> `chmod +x create_ws.sh`
+3.  輸入指令自動安裝 </br> `./create_ws.sh` 
