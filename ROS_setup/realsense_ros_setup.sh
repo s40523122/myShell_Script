@@ -8,7 +8,7 @@ while true; do
         echo "Workspace '$ws_name' selected."
         break  # if exist, break loop.
     else
-        echo "\e[1;31m Workspace directory '$ws_name' does not exist. Please provide a valid directory name.  \e[0m"
+        echo -e "\e[1;31m Workspace directory '$ws_name' does not exist. Please provide a valid directory name.  \e[0m"
     fi
 done
 
