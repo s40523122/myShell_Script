@@ -17,7 +17,7 @@ cd $ws_name/src
 # Setup RealSense™ SDK 2.0
 sudo apt-get update
 git clone https://github.com/IntelRealSense/librealsense.git
-sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at
+sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at -y
 cd librealsense/
 touch CATKIN_IGNORE
 ./scripts/setup_udev_rules.sh
