@@ -12,6 +12,6 @@
 
 # 安裝 Realsense 套件
 1. 取得執行指令集</br>
-  `wget https://raw.githubusercontent.com/s40523122/myShell_Script/main/ROS_setup/setup_realsense_ros.sh`
-2. 給予執行權限 </br> `chmod +x setup_realsense_ros.sh`
-3.  輸入指令自動安裝 </br> `./setup_realsense_ros.sh` 
+  `wget https://raw.githubusercontent.com/s40523122/myShell_Script/main/ROS_setup/realsense_ros_setup.sh`
+2. 給予執行權限 </br> `chmod +x realsense_ros_setup.sh`
+3.  輸入指令自動安裝 </br> `./realsense_ros_setup.sh` 
