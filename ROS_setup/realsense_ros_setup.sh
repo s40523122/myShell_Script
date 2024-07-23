@@ -13,15 +13,14 @@ while true; do
 done
 
 cd $ws_name/src
-
 # Setup RealSense™ SDK 2.0
 sudo apt-get update
 git clone https://github.com/IntelRealSense/librealsense.git
-sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at -y
+sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev at v4l-utils -y
 cd librealsense/
 touch CATKIN_IGNORE
-./scripts/setup_udev_rules.sh
-./scripts/patch-realsense-ubuntu-lts-hwe.sh -n
+sudo ./scripts/setup_udev_rules.sh
+sudo ./scripts/patch-realsense-ubuntu-lts-hwe.sh -n
 echo 'hid_sensor_custom' | sudo tee -a /etc/modules
 mkdir build && cd build
 cmake ../ -DBUILD_EXAMPLES=true
@@ -40,4 +39,5 @@ catkin_make clean
 catkin_make -DCATKIN_ENABLE_TESTING=False -DCMAKE_BUILD_TYPE=Release
 catkin_make install
 source ~/.bashrc
+
 
